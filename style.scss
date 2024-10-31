@@ -1,0 +1,52 @@
+@import 'null';
+@import 'fonts';
+
+
+#app {
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero {
+    width: 100%;
+    background: url('/img/hero.jpg');
+    min-height: 100dvh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    padding-top: 10vh;
+
+
+    &_header {
+        padding: 0px 15px;
+        text-align: center;
+        font-family: 'modak';
+        font-size: 96px;
+        color: #FF0000;
+
+        @media(max-width: 700px) {
+            font-size: 64px;
+            line-height: 60px;
+        }
+    }
+
+    &_header,
+    &_decor {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &_vamp {
+        align-items: end;
+
+        img {
+            max-height: 60vh;
+            width: 100vw;
+        }
+    }
+
+}
