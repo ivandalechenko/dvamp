@@ -1,7 +1,7 @@
 import './style.scss';
 
 
-const ca = 'soon...';
+const ca = 'DV92AF6RzKMqMBVQNiZZmjrCfj6pTrwshaUmSgoZpump';
 document.getElementById('ca_val').innerHTML = ca
 document.getElementById('ca').onclick = (ca) => {
     navigator.clipboard.writeText(ca)
